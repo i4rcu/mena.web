@@ -8,8 +8,8 @@ body, h1, h2, p, img, a {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: rgb(242, 242, 242);
-  color: #333;
+  background-color: rgba(35, 55, 69, 1); /* Updated Background Color */
+  color: white; /* Updated text color to contrast with the dark background */
   margin: 0;
   padding: 20px;
 }
@@ -53,14 +53,14 @@ header p {
   text-align: center;
   background-color: rgba(65, 190, 184, 0.1);
   border: 1px solid rgba(65, 190, 184, 0.5);
-  padding: 10px; /* Add padding for spacing */
+  padding: 10px;
 }
 
 .slide img {
-  width: 100%; /* Make images responsive */
-  max-width: 600px; /* Set a maximum width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -139,27 +139,10 @@ footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
-  color: #666;
+  color: #ccc; /* Light gray for footer text */
 }
 
 /* Media Queries for Responsiveness */
-
-/* For screens less than 1024px (Large Tablets) */
-@media (max-width: 1024px) {
-  body {
-    padding: 10px;
-  }
-
-  .slider-container {
-    max-width: 90%;
-  }
-
-  .slide img {
-    max-width: 500px;
-  }
-}
-
-/* For screens less than 768px (Small Tablets and Mobile) */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -171,10 +154,6 @@ footer {
 
   .slider-container {
     max-width: 95%;
-  }
-
-  .slide img {
-    max-width: 400px;
   }
 
   .contact h2 {
@@ -191,7 +170,6 @@ footer {
   }
 }
 
-/* For screens less than 480px (Mobile Devices) */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem;
