@@ -1,0 +1,224 @@
+/* General Reset */
+body, h1, h2, p, img, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(242, 242, 242);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgba(59, 180, 115, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+  background-color: rgba(65, 190, 184, 0.1);
+  border: 1px solid rgba(65, 190, 184, 0.5);
+  padding: 10px; /* Add padding for spacing */
+}
+
+.slide img {
+  width: 100%; /* Make images responsive */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  background: rgba(241, 108, 39, 0.1);
+  color: rgba(241, 108, 39, 1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(59, 180, 115, 0.8);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(65, 190, 184, 0.8);
+}
+
+/* WhatsApp Contact Section */
+.contact {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(65, 190, 184, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: rgba(59, 180, 115, 1);
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: rgba(241, 108, 39, 1);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: rgba(241, 108, 39, 0.8);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens less than 1024px (Large Tablets) */
+@media (max-width: 1024px) {
+  body {
+    padding: 10px;
+  }
+
+  .slider-container {
+    max-width: 90%;
+  }
+
+  .slide img {
+    max-width: 500px;
+  }
+}
+
+/* For screens less than 768px (Small Tablets and Mobile) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .slider-container {
+    max-width: 95%;
+  }
+
+  .slide img {
+    max-width: 400px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* For screens less than 480px (Mobile Devices) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact p {
+    font-size: 0.8rem;
+  }
+
+  .whatsapp-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .slide img {
+    max-width: 300px;
+  }
+
+  button.prev, button.next {
+    padding: 8px 16px;
+  }
+}
