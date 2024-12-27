@@ -200,3 +200,38 @@ footer {
     padding: 8px 16px;
   }
 }
+/* APK Download Section */
+.download {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(65, 190, 184, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download h2 {
+  font-size: 2rem;
+  color: rgba(59, 180, 115, 1);
+  margin-bottom: 10px;
+}
+
+.download p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: rgba(241, 108, 39, 1);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn:hover {
+  background-color: rgba(241, 108, 39, 0.8);
+}
