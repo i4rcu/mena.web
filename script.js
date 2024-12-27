@@ -1,20 +1,26 @@
-const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+document.addEventListener('DOMContentLoaded', () => {
+  const sliders = document.querySelectorAll('.slider-container');
 
-let currentIndex = 0;
+  sliders.forEach(sliderContainer => {
+    const slider = sliderContainer.querySelector('.slider');
+    const slides = slider.querySelectorAll('.slide');
+    const prevButton = sliderContainer.querySelector('.prev');
+    const nextButton = sliderContainer.querySelector('.next');
 
-function updateSliderPosition() {
-  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+    let currentIndex = 0;
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSliderPosition();
-});
+    const updateSliderPosition = () => {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateSliderPosition();
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+      updateSliderPosition();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+      updateSliderPosition();
+    });
+  });
 });

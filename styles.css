@@ -8,8 +8,8 @@ body, h1, h2, p, img, a {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: rgba(35, 55, 69, 1); /* Updated Background Color */
-  color: white; /* Updated text color to contrast with the dark background */
+  background-color: #233745;
+  color: white;
   margin: 0;
   padding: 20px;
 }
@@ -18,19 +18,10 @@ body {
 header {
   text-align: center;
   margin-bottom: 40px;
-  background-color: rgba(59, 180, 115, 0.8);
+  background-color: #3BB473;
   color: white;
   padding: 20px;
   border-radius: 10px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
 }
 
 /* Slider Container */
@@ -40,7 +31,6 @@ header p {
   margin: 40px auto;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slider {
@@ -51,15 +41,11 @@ header p {
 .slide {
   min-width: 100%;
   text-align: center;
-  background-color: rgba(65, 190, 184, 0.1);
-  border: 1px solid rgba(65, 190, 184, 0.5);
-  padding: 10px;
 }
 
 .slide img {
   width: 100%;
   max-width: 600px;
-  height: auto;
   margin: 0 auto;
   display: block;
 }
@@ -67,8 +53,6 @@ header p {
 .caption {
   margin-top: 10px;
   font-size: 1rem;
-  background: rgba(241, 108, 39, 0.1);
-  color: rgba(241, 108, 39, 1);
   padding: 10px;
   border-radius: 5px;
 }
@@ -78,13 +62,12 @@ button.prev, button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(59, 180, 115, 0.8);
+  background-color: #3BB473;
   color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   z-index: 10;
-  border-radius: 5px;
 }
 
 button.prev {
@@ -95,143 +78,16 @@ button.next {
   right: 10px;
 }
 
-button.prev:hover, button.next:hover {
-  background-color: rgba(65, 190, 184, 0.8);
-}
-
-/* WhatsApp Contact Section */
-.contact {
+/* Contact Section */
+.contact, .download {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 20px;
-  background-color: rgba(65, 190, 184, 0.2);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact h2 {
-  font-size: 2rem;
-  color: rgba(59, 180, 115, 1);
-  margin-bottom: 10px;
-}
-
-.contact p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  background-color: rgba(241, 108, 39, 1);
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.whatsapp-btn:hover {
-  background-color: rgba(241, 108, 39, 0.8);
+  background-color: #3BB473;
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
-  font-size: 0.9rem;
-  color: #ccc; /* Light gray for footer text */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .slider-container {
-    max-width: 95%;
-  }
-
-  .contact h2 {
-    font-size: 1.5rem;
-  }
-
-  .contact p {
-    font-size: 0.9rem;
-  }
-
-  .whatsapp-btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header p {
-    font-size: 0.9rem;
-  }
-
-  .contact h2 {
-    font-size: 1.2rem;
-  }
-
-  .contact p {
-    font-size: 0.8rem;
-  }
-
-  .whatsapp-btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-
-  .slide img {
-    max-width: 300px;
-  }
-
-  button.prev, button.next {
-    padding: 8px 16px;
-  }
-}
-/* APK Download Section */
-.download {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: rgba(65, 190, 184, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.download h2 {
-  font-size: 2rem;
-  color: rgba(59, 180, 115, 1);
-  margin-bottom: 10px;
-}
-
-.download p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.download-btn {
-  display: inline-block;
-  background-color: rgba(241, 108, 39, 1);
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.download-btn:hover {
-  background-color: rgba(241, 108, 39, 0.8);
 }
