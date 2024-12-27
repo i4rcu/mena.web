@@ -91,3 +91,19 @@ footer {
   text-align: center;
   margin-top: 40px;
 }
+/* General Button Styles */
+a.download-btn, a.whatsapp-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #233745;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a.download-btn:hover, a.whatsapp-btn:hover {
+  background-color: #2a944a;
+}
